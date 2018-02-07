@@ -75,9 +75,6 @@ class ReactionPathwayPlugin:
       no_edge = 0
       negative_edges = 0
       correlation_sum = 0
-      print self.pathways
-      print self.clusters
-      print self.bacteria
       for chem in self.pathways:
          for chem2 in self.pathways:
             if (chem2 != chem and self.pathways[chem] == self.pathways[chem2]):
@@ -125,13 +122,13 @@ class ReactionPathwayPlugin:
                corr_diff_count += 1
       
 
-      print ("Metabolites on same pathway: %d in same cluster, %d in different clusters, %f percent" % (samecluster, diffcluster, samecluster / float(samecluster+diffcluster)))
-      print ("Positively correlated: %d, Zero correlated: %d, Negatively correlated: %d, %f percent positive" % (positive_edges, no_edge, negative_edges, positive_edges / float(positive_edges+no_edge+negative_edges)))
+      print ("Metabolites on same pathway: %d in same cluster, %d in different clusters, %f percent" % (samecluster, diffcluster, samecluster*100 / float(samecluster+diffcluster)))
+      print ("Positively correlated: %d, Zero correlated: %d, Negatively correlated: %d, %f percent positive" % (positive_edges, no_edge, negative_edges, positive_edges*100 / float(positive_edges+no_edge+negative_edges)))
       print ("Average correlation value (same): %f" % (correlation_sum / (positive_edges+no_edge+negative_edges)))
       print ("Average correlation value (diff): %f" % (corr_diff / corr_diff_count))
-      print ("Percent of positive edges consumed by metabolites on same pathway: %f" % (positive_edges / float(pos)))
-      print ("Percent of zero edges consumed by metabolites on same pathway: %f" % (no_edge / float(zero)))
-      print ("Percent of negative edges consumed by metabolites on same pathway: %f" % (negative_edges / float(neg)))
+      print ("Percent of positive edges consumed by metabolites on same pathway: %f" % (positive_edges*100 / float(pos)))
+      print ("Percent of zero edges consumed by metabolites on same pathway: %f" % (no_edge*100 / float(zero)))
+      print ("Percent of negative edges consumed by metabolites on same pathway: %f" % (negative_edges*100 / float(neg)))
 
       filestuff = open(filename, 'w')
       filestuff.write('Pathway\tPositive\tZero\tNegative\tPct Positive\tAverage Correlation\n')
