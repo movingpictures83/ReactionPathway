@@ -122,13 +122,13 @@ class ReactionPathwayPlugin:
                corr_diff_count += 1
       
 
-      print ("Metabolites on same pathway: %d in same cluster, %d in different clusters, %f percent" % (samecluster, diffcluster, samecluster*100 / float(samecluster+diffcluster)))
+      print ("Nodes on same pathway: %d in same cluster, %d in different clusters, %f percent" % (samecluster, diffcluster, samecluster*100 / float(samecluster+diffcluster)))
       print ("Positively correlated: %d, Zero correlated: %d, Negatively correlated: %d, %f percent positive" % (positive_edges, no_edge, negative_edges, positive_edges*100 / float(positive_edges+no_edge+negative_edges)))
       print ("Average correlation value (same): %f" % (correlation_sum / (positive_edges+no_edge+negative_edges)))
       print ("Average correlation value (diff): %f" % (corr_diff / corr_diff_count))
-      print ("Percent of positive edges consumed by metabolites on same pathway: %f" % (positive_edges*100 / float(pos)))
-      print ("Percent of zero edges consumed by metabolites on same pathway: %f" % (no_edge*100 / float(zero)))
-      print ("Percent of negative edges consumed by metabolites on same pathway: %f" % (negative_edges*100 / float(neg)))
+      print ("Percent of positive edges consumed by nodes on same pathway: %f" % (positive_edges*100 / float(pos)))
+      print ("Percent of zero edges consumed by nodes on same pathway: %f" % (no_edge*100 / float(zero)))
+      print ("Percent of negative edges consumed by nodes on same pathway: %f" % (negative_edges*100 / float(neg)))
 
       filestuff = open(filename, 'w')
       filestuff.write('Pathway\tPositive\tZero\tNegative\tPct Positive\tAverage Correlation\n')
