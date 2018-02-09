@@ -2,6 +2,7 @@
 # Language: Python
 # Input: Prefix (for multiple input files)
 # Output: TXT (statistics)
+# Tested with: PluMA 1.0, Python 2.7
 
 PluMA plugin to perform statistical analysis of a network based on information regarding
 "pathways" for the nodes.  This plugin is likely most useful for metabolomics data, or gene
