@@ -1,0 +1,2 @@
+Prefix plugins/ReactionPathway/example/
+Plugin ReactionPathway inputfile NSMetab outputfile NSMetab.pathwaystats.txt

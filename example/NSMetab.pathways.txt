@@ -1,0 +1,57 @@
+ID	Pathway
+1	Glycine, Serine and Threonine Metabolism
+2	Alanine and Aspartate Metabolism
+3 	Glutamate Metabolism
+4	Histidine Metabolism
+5	Lysine Metabolism
+6	Phenylalanine and Tyrosine Metabolism
+7	Tryptophan Metabolism
+8	Leucine, Isoleucine and Valine Metabolism
+9	Methionine, Cysteine, SAM and Taurine Metabolism
+10	Urea cycle; Arginine and Proline Metabolism
+11	Creatine Metabolism
+12	Polyamine Metabolism
+13	Glutathione Metabolism
+14	Gamma-glutamyl Amino Acid
+15	Acetylated Peptides
+16	Glycolysis, Gluconeogenesis, and Pyruvate Metabolism
+17	Pentose Metabolism
+18	Glycogen Metabolism
+19	Disaccharides and Oligosaccharides
+20	Fructose, Mannose and Galactose Metabolism
+21	Aminosugar Metabolism
+22	TCA Cycle
+23	Oxidative Phosphorylation
+24	Long Chain Fatty Acid
+25	Fatty Acid, Dicarboxylate
+26	Fatty Acid, Amino
+27	Fatty Acid Metabolism (also BCAA Metabolism)
+28	Fatty Acid Metabolism(Acyl Carnitine)
+29	Carnitine Metabolism
+30	Ketone Bodies
+31	Inositol Metabolism
+32	Phospholipid Metabolism
+33	Phosphatidylserine (PS)
+34	Lysolipid
+35	Plasmalogen
+36	Glycerolipid Metabolism
+37	Diacylglycerol
+38	Sphingolipid Metabolism
+39	Mevalonate Metabolism
+40	Sterol
+41	Steroid
+42	Purine Metabolism, (Hypo)Xanthine/Inosine containing
+43	Purine Metabolism, Adenine containing
+44	Purine Metabolism, Guanine containing
+45	Pyrimidine Metabolism, Orotate containing
+46	Pyrimidine Metabolism, Uracil containing
+47	Pyrimidine Metabolism, Cytidine containing
+48	Nicotinate and Nicotinamide Metabolism
+49	Ascorbate and Aldarate Metabolism
+50	Hemoglobin and Porphyrin Metabolism
+51	Benzoate Metabolism
+52	anthine Metabolism
+53	Tobacco Metabolite
+54	Food Component/Plant
+55	Drug
+56	Chemical
