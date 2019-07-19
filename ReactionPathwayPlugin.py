@@ -52,7 +52,7 @@ class ReactionPathwayPlugin:
          self.ADJ.append([])
          for j in range(self.n):
             if (contents[j+1] == '-Inf'):
-               print "Infinity between ", self.bacteria[i], " and ", self.bacteria[j]
+               print ("Infinity between "+self.bacteria[i]+" and "+self.bacteria[j])
             value = float(contents[j+1])
             if (i != j and value != 0):
                self.ADJ[i].append(value)
@@ -78,7 +78,7 @@ class ReactionPathwayPlugin:
       for chem in self.pathways:
          for chem2 in self.pathways:
             if (chem2 != chem and self.pathways[chem] == self.pathways[chem2]):
-               if (self.clusters.has_key(chem) and self.clusters.has_key(chem2) and self.clusters[chem] == self.clusters[chem2]):
+               if (chem in self.clusters  and chem2 in self.clusters and self.clusters[chem] == self.clusters[chem2]):
                   samecluster += 1
                else:
                   diffcluster += 1
