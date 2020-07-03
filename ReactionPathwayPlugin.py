@@ -78,7 +78,7 @@ class ReactionPathwayPlugin:
       for chem in self.pathways:
          for chem2 in self.pathways:
             if (chem2 != chem and self.pathways[chem] == self.pathways[chem2]):
-               if (chem in self.clusters and chem2 in self.clusters and self.clusters[chem] == self.clusters[chem2]):
+               if (chem in self.clusters  and chem2 in self.clusters and self.clusters[chem] == self.clusters[chem2]):
                   samecluster += 1
                else:
                   diffcluster += 1
